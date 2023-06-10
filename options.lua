@@ -9,7 +9,8 @@ return {
     wrap = false, -- sets vim.opt.wrap
   },
   g = {
-    mapleader = " ", -- sets vim.g.mapleader
+    move_normal_option = 1,
+    mapleader = " ", -- ets vim.g.mapleader
     autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
     cmp_enabled = true, -- enable completion at start
     autopairs_enabled = true, -- enable autopairs at start
