@@ -71,6 +71,10 @@ return {
       end,
       desc = "Find buffers",
     },
+
+    -- neogit
+    ["<leader>go"] = { "<cmd>DiffviewOpen<cr>", desc = "Open diff view" },
+    ["<leader>gx"] = { "<cmd>DiffviewClose<cr>", desc = "Close diff view" },
   },
   t = {
     -- setting a mapping to false will disable it

@@ -1,4 +1,4 @@
 return {
-  "matze/vim-move",
+  "karb94/neoscroll.nvim",
   event = "VeryLazy",
 }

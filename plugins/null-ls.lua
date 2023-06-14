@@ -10,7 +10,7 @@ return {
     config.sources = {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
-      null_ls.builtins.formatting.prettierd,
+      -- null_ls.builtins.formatting.prettierd,
       require "typescript.extensions.null-ls.code-actions",
     }
     return config -- return final config table

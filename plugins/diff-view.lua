@@ -1,4 +1,9 @@
 return {
   "sindrets/diffview.nvim",
-  lazy = false,
+  event = "VeryLazy",
+  opts = {
+    file_panel = {
+      listing_style = "list",
+    },
+  },
 }

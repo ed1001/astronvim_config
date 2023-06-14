@@ -3,9 +3,6 @@ return {
   "AstroNvim/astrocommunity",
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
-
-  { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.test.neotest" },
   {
     "neotest",
@@ -38,11 +35,14 @@ return {
       }, neotest_ns)
       require("neotest").setup {
         -- your neotest config here
+        quickfix = {
+          open = false,
+        },
         adapters = {
           require "neotest-jest" {
             jestConfigFile = "jest.config.ts",
             env = { CI = true },
-            cwd = "src/be",
+            cwd = function(path) return vim.fn.getcwd() end,
           },
         },
       }

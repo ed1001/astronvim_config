@@ -1,4 +1,4 @@
 return {
-  "matze/vim-move",
+  "ThePrimeagen/vim-be-good",
   event = "VeryLazy",
 }

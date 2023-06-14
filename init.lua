@@ -18,7 +18,8 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "catppuccin",
+  -- colorscheme = "catppuccin",
+  colorscheme = "lunar",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -64,6 +65,8 @@ return {
         disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    -- { import = "lazyvim.plugins.extras.formatting.prettier" },
   },
 
   -- This function is run last and is a good place to configuring
